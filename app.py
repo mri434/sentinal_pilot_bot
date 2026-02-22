@@ -10,7 +10,7 @@ app.secret_key = "sentinel_secret_key"
 # ============================================================
 # CONFIGURATION
 # ============================================================
-API_KEY = "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"
+API_KEY = os.environ.get("OPENROUTER_API_KEY")
 CSV_PATH = "final_sentinel_v2.csv"
 MODEL   = "meta-llama/llama-4-maverick"
 # ============================================================
